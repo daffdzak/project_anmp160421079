@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/game_navigation"
-    app:startDestination="@id/gameFragment">
+    app:startDestination="@id/mainFragment">
 
     <fragment
         android:id="@+id/gameFragment"
@@ -11,7 +11,7 @@
         android:label="Game Screen"
         tools:layout="@layout/fragment_game">
         <action
-            android:id="@+id/action_gameFragment_to_mainFragment"
+            android:id="@+id/gameToMainFragmen"
             app:destination="@id/mainFragment" />
     </fragment>
     <fragment
@@ -23,11 +23,11 @@
             android:id="@+id/actionGameFragmen"
             app:destination="@id/gameFragment" />
         <action
-            android:id="@+id/action_mainFragment_to_profileFragment"
+            android:id="@+id/actionProfileFragmen"
             app:destination="@id/profileFragment" />
         <action
-            android:id="@+id/action_mainFragment_to_scheduleFragment"
-            app:destination="@id/scheduleFragment" />
+            android:id="@+id/actionScheduleFragmen"
+            app:destination="@id/actionScheduleMainFragmen" />
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
@@ -35,11 +35,11 @@
         android:label="Profile Screen"
         tools:layout="@layout/fragment_profile">
         <action
-            android:id="@+id/action_profileFragment_to_mainFragment"
+            android:id="@+id/actionProfileMainFragmen"
             app:destination="@id/mainFragment" />
     </fragment>
     <fragment
-        android:id="@+id/scheduleFragment"
+        android:id="@+id/actionScheduleMainFragmen"
         android:name="com.ubaya.projectuts.ScheduleFragment"
         android:label="Schedule Screen"
         tools:layout="@layout/fragment_schedule">
